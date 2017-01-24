@@ -111,7 +111,7 @@ class SQLApi():
 
     editor = make_notebook(
         name='Execute and watch',
-        editor_type='impala',
+        editor_type=dashboard['engine'],
         statement=sql,
         database=database,
         status='ready-execute'
